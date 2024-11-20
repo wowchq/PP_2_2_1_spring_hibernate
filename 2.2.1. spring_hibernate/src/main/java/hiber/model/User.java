@@ -1,7 +1,5 @@
 package hiber.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.persistence.*;
 
 @Entity
@@ -22,7 +20,7 @@ public class User {
    private String email;
 
    @OneToOne
-   @JoinColumn(name = "cars_id")
+   @JoinColumn(name = "car_id")
    private Car userCar;
 
    public User() {}
@@ -66,10 +64,10 @@ public class User {
    }
 
    public Car getUserCar() {
-      return userCar;
+      return car;
    }
 
-   public void setUserCar(Car userCar) {
-      this.userCar = userCar;
+   public void setUserCar(Car car) {
+      this.car = car;
    }
 }
