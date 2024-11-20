@@ -53,7 +53,6 @@ public class MainApp {
       System.out.println("First Name = "+carOwner.getFirstName());
       System.out.println("Last Name = "+carOwner.getLastName());
       System.out.println("Email = "+carOwner.getEmail());
-
       context.close();
    }
 }
